@@ -1,11 +1,8 @@
-# _[APPLICATION NAME]_
+# _Mr. Roboger_
 
 #### By **Zach Wilson**
 
-#### _[DESCRIPTION OF APPLICATION]_
-
-#### Link to Portfolio on GitHub Pages
-https://zachwilson22495.github.io/language-suggestion/
+#### _A webpage that gives you a list of numbers with some funny edits_
 
 ## Technologies Used
 
@@ -17,12 +14,12 @@ https://zachwilson22495.github.io/language-suggestion/
 
 ## Description
 
-_[FURTHER DESCRIPTION OF APPLICATION]_
+_Type a number into Mr. Roboger, and you'll receive back a list of numbers from 0 all the way to your desired number. There will be some beeps and boops along the way, as well as Mr. Roboger's catchphrase_
 
 ## Setup/Installation Requirements
 
 * Clone this repository to your Desktop
-* Navigate to the new folder titled 'language-suggestion' and open it
+* Navigate to the new folder titled 'mr-roboger' and open it
 * Open index.html with your browser
 * Answer the questions provided and click 'Submit' to see your answer
 
