@@ -14,7 +14,7 @@
 
 ## Description
 
-_Type a number into Mr. Roboger, and you'll receive back a list of numbers from 0 all the way to your desired number. There will be some beeps and boops along the way, as well as Mr. Roboger's catchphrase_
+_Type a number into Mr. Roboger, and you'll receive back a list of numbers from 0 all the way to your desired number. There will be some beeps and boops along the way, as well as Mr. Roboger's heartwarming catchphrase_
 
 ## Setup/Installation Requirements
 
@@ -23,15 +23,57 @@ _Type a number into Mr. Roboger, and you'll receive back a list of numbers from 
 * Open index.html with your browser
 * Answer the questions provided and click 'Submit' to see your answer
 
-## Test Log
+## TEST LOG
+
 
 Describe: neighbortron()
 
-Test: "It should change all instances of 3 to the string "Won't you be my neighbor?"
+Test: "Should return the number 10"
+Code: 
+const numberTen = 10
+Expected Output: 10
+
+Test: "Should return all numbers up to 10"
 Code:
-const array = "1,2,3,4,5";
-neighbortron(array);
-Expected Output: "1,2,Won't you be my neighbor?,4,5";
+for (let index = 0; index <= 10; index++) {
+    console.log(index);
+}
+Expected Output: 0,1,2,3,4,5,6,7,8,9
+
+Test: "Should say 'boop' when the number 2 is returned"
+Code:
+function neighbortron(input){
+  let result = []
+  for (let index = 0; index <= input; index++) {
+    let numString = index.toString();
+    if (numString.includes("2")) {
+      result.push(" Boop");
+    } else {
+      result.push(" " + numString);
+    };
+  };
+  return result;
+};
+Expected Output: 0,1,boop,3,4,5,6,7,8,9,10
+
+Test: "Should count to twenty. Replacing ones with 'beep' and twos with 'boop.' The number twelve should return 'boop'
+Code:
+function neighbortron(input){
+  let result = []
+  for (let index = 0; index <= input; index++) {
+    let numString = index.toString();
+    if (numString.includes("2")) {
+      result.push(" Boop");
+    } else if (numString.includes("1")) {
+      result.push(" Beep");
+    } else {
+      result.push(" " + numString);
+    };
+  };
+  return result;
+};
+Expected Output: 0,beep,boop,3,4,5,6,7,8,9,beep,beep,boop,beep,beep,beep,beep,beep,beep,beep,boop
+
 
 ## Known Bugs
 
